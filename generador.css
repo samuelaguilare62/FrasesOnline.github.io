@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  
+}
+
+h1 {
+  color: #333;
+}
+
+
+/*frases*/
+
+#frase {
+  font-size: 3vw; /* establece el tamaño de fuente en 4% del ancho de la ventana del navegador */
+  font-weight: bold;
+  font-style: italic;
+  margin: 30px auto;
+  color: white;
+  max-width: 100%; /* establece el ancho máximo en 100% del ancho de la ventana del navegador */
+  text-shadow: 1px 0px 1px whitesmoke;
+  padding: 5vw; /* establece el relleno en 5% del ancho de la ventana del navegador */
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi6_fR_CHySUhBqOTmMoT7Fk-OkD1EbZTbFQ&usqp=CAU);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 1.5; /* establece la altura de línea en 1.5 veces el tamaño de fuente */
+}
+
+.boton1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+boton1:hover {
+  background-color: #555;
+}
+
+.boton2 {
+  padding: 10px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton2:hover {
+  background-color: #27ae60;
+}
+
+.compartir {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.compartir:hover {
+  background-color: #3e8e41;
+}
+
+
+@media (max-width: 767px) {
+  #frase {
+    font-size: 4vw;
+    padding: 30px;
+    margin: 40px auto;
+  }
+  
+  .boton1, .boton2, .compartir {
+    padding: 15px 25px;
+    font-size: 19px;
+  }
+  
+  .botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+    .imatext {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #contenedor-imagen {
+        max-width: 50%;
+        margin-right: 10px;
+    }
+
+    #texto {
+        width: 50%;
+    }
+
+    #agregar-texto {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #descargar {
+        margin-top: 0;
+    }
+}
