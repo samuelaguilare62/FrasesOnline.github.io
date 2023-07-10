@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>IFEEL</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+  
+  <header>
+    <div class="logo">IFEEL</div>
+  
+    
+    <div class="navbar_content">
+      <i class="bi bi-grid"></i>
+      <i class='bx bx-sun' id="darkLight">☀️</i>
+    </div>
+  </header>
+  
+  <h1>Frases Motivadoras</h1>
+  <div id="frase"></div>
+  <div id="canvas"></div>
+  <div class="botones">
+    <button onclick="generarFrase()" class="boton1">Nueva Frase</button>
+
+    <button onclick="mostrarFrase()" class="boton2">¿Cómo te sientes hoy?</button>
+
+    <button class="compartir" onclick="copiarFrase()">Compartir</button>
+
+     <div id="preview"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
